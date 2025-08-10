@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Archana Valke Portfolio</title>
+  <meta name="description" content="Personal portfolio of Archana Valke, an aspiring Software Engineer in Computer Science and Engineering." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-slate-100 antialiased selection:bg-fuchsia-500/30 selection:text-fuchsia-100">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-slate-900/60 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3 group">
+        <span class="relative inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-tr from-fuchsia-500 to-indigo-500 text-white font-bold">
+          <span class="absolute inset-0 rounded-full animate-[glowPulse_2s_ease-out_infinite]"></span>
+          <span class="relative">AV</span>
+        </span>
+        <span class="text-lg font-semibold tracking-tight group-hover:text-fuchsia-300 transition-colors">Archana Valke</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#home" class="hover:text-fuchsia-300 transition-colors">Home</a>
+        <a href="#about" class="hover:text-fuchsia-300 transition-colors">About</a>
+        <a href="#skills" class="hover:text-fuchsia-300 transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-fuchsia-300 transition-colors">Projects</a>
+        <a href="#education" class="hover:text-fuchsia-300 transition-colors">Education</a>
+        <a href="#contact" class="hover:text-fuchsia-300 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Mobile button -->
+      <button id="menuBtn" aria-label="Open menu" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/15 border border-white/10 transition">
+        <svg id="menuIconOpen" class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <svg id="menuIconClose" class="w-5 h-5 hidden" viewBox="0 0 24 24" fill="none">
+          <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/10">
+      <nav class="px-6 py-4 grid gap-3 text-sm">
+        <a href="#home" class="py-2 hover:text-fuchsia-300 transition-colors">Home</a>
+        <a href="#about" class="py-2 hover:text-fuchsia-300 transition-colors">About</a>
+        <a href="#skills" class="py-2 hover:text-fuchsia-300 transition-colors">Skills</a>
+        <a href="#projects" class="py-2 hover:text-fuchsia-300 transition-colors">Projects</a>
+        <a href="#education" class="py-2 hover:text-fuchsia-300 transition-colors">Education</a>
+        <a href="#contact" class="py-2 hover:text-fuchsia-300 transition-colors">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="relative">
+    <!-- Decorative backdrop -->
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10">
+      <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-fuchsia-500/20 blur-3xl"></div>
+      <div class="absolute top-1/3 -left-24 w-96 h-96 rounded-full bg-indigo-500/20 blur-3xl"></div>
+    </div>
+
+    <!-- Hero -->
+    <section id="home" class="max-w-7xl mx-auto px-6 pt-16 md:pt-24 pb-16">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="text-fuchsia-300/90 font-semibold tracking-wide mb-3">Hello! I'm</p>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 via-pink-300 to-indigo-300">Archana Valke</span>
+          </h1>
+          <p class="mt-3 text-xl text-slate-200/90">Aspiring Software Engineer · Computer Science and Engineering</p>
+          <p class="mt-5 text-slate-300 max-w-xl">
+            I’m passionate about building impactful, user-focused solutions that solve real-world problems.
+             I’m curious, motivated to learn, and excited to grow my career in Computer Science and Engineering.
+              Let’s create something meaningful together.
+          </p>
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#projects" class="inline-flex items-center gap-2 rounded-full bg-fuchsia-600 hover:bg-fuchsia-500 text-white font-semibold px-6 py-3 shadow-lg shadow-fuchsia-600/30 transition">
+              View Projects
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-white/10 hover:bg-white/15 text-slate-100 font-semibold px-6 py-3 border border-white/10 transition">
+              Contact Me
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4zM4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Visual -->
+        <div class="relative">
+          <div class="relative rounded-2xl bg-white/5 p-8 border border-white/10 overflow-hidden">
+            <div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-fuchsia-500/20 blur-3xl"></div>
+            <div class="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-indigo-500/20 blur-3xl"></div>
+            <div class="relative">
+              <svg viewBox="0 0 400 300" class="w-full h-auto">
+                <defs>
+                  <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#a78bfa"/>
+                    <stop offset="100%" stop-color="#f0abfc"/>
+                  </linearGradient>
+                </defs>
+                <rect x="0" y="0" width="400" height="300" rx="16" fill="url(#g1)" opacity="0.08"/>
+                <g fill="none" stroke="url(#g1)" stroke-width="1.2" opacity="0.6">
+                  <circle cx="80" cy="70" r="36"/>
+                  <circle cx="140" cy="110" r="24"/>
+                  <circle cx="300" cy="190" r="40"/>
+                  <path d="M40 240 Q 200 140 360 240"/>
+                </g>
+                <g>
+                  <rect x="60" y="90" width="120" height="80" rx="10" fill="white" opacity="0.08" />
+                  <rect x="220" y="60" width="120" height="80" rx="10" fill="white" opacity="0.08" />
+                  <rect x="200" y="160" width="140" height="80" rx="10" fill="white" opacity="0.08" />
+                </g>
+                <text x="200" y="280" text-anchor="middle" fill="#e9d5ff" font-size="14" font-weight="600">Design · Code · Learn</text>
+              </svg>
+            </div>
+          </div>
+          <div class="mt-4 text-sm text-slate-400 text-center">Clean, modern, and ready for your story.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="md:col-span-1">
+          <h2 class="text-3xl font-extrabold tracking-tight">About Me</h2>
+          <p class="mt-3 text-slate-300">Where I’m from, what I studied, and what drives me.</p>
+        </div>
+        <div class="md:col-span-2">
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-6 md:p-8">
+            <p class="text-slate-200">
+              I’m Archana Valke from Shadnagar,Telangana.
+             I studied Computer Science and Engineering at Jaya Prakash Narayan College Of Engineering, JNTUH University.
+            </p>
+            <p class="mt-4 text-slate-300">
+              I am a motivated and detail-oriented Computer Science Engineering student with a passion for developing scalable,efficient and user-freiendly software solutions.
+              I'm especially intrested in software development, web development.  As a project team leader, I have led and developed solutions like an IOT based Pet Feeder and Tracker and a Machine Learning based Drug Recommendation system. 
+              I'm constantly learning through courses, projects, and I enjoy exploring new tools and frameworks.
+            </p>
+            <p class="mt-4 text-slate-300">
+              I'm seeking opportunities in software engineering , web development, Frontend Developer, Python Developer or related entry-level roles where I can grow contribute, and work with a supportive team.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="max-w-7xl mx-auto px-6 py-16">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-extrabold tracking-tight">Skills & Tools</h2>
+        <p class="mt-3 text-slate-300">A snapshot of what I use and how I work.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Technical -->
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-full bg-fuchsia-500/20 flex items-center justify-center text-fuchsia-300 border border-fuchsia-400/30">⚙️</span>
+            <h3 class="text-xl font-bold">Technical</h3>
+          </div>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">HTML</span>
+            <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">CSS</span>
+            <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">Python</span>
+            <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">JavaScript</span>
+            <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">SQL</span>
+            <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">JAVA(Beginner)</span>
+            <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">C++</span>
+            <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">Node.js(Currently Learning)</span>
+            <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">Bootstrap</span>
+            <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">Flexbox</span>
+            <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">Git</span>
+          </div>
+        </div>
+
+        <!-- Soft -->
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-300 border border-indigo-400/30">🤝</span>
+            <h3 class="text-xl font-bold">Soft Skills</h3>
+          </div>
+          <ul class="mt-5 grid grid-cols-1 gap-3 text-slate-300">
+            <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-indigo-400"></span>Communication</li>
+            <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-indigo-400"></span>Teamwork</li>
+            <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-indigo-400"></span>Problem-solving</li>
+            <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-indigo-400"></span>Continuous Learning</li>
+            <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-indigo-400"></span>Time management</li>
+          </ul>
+        </div>
+
+        <!-- Certifications -->
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-300 border border-emerald-400/30">🎓</span>
+            <h3 class="text-xl font-bold">Certifications & Courses</h3>
+          </div>
+          <ul class="mt-5 space-y-2 text-slate-300">
+            <li>Static Website Development</li>
+            <li>Responsive Website Development</li>
+            <li>Introduction to Databases</li>
+            <li>Python Programming</li>
+            <li>JavaScript</li>
+            <li>Cloud Computing</li>
+            <li>Gen-AI</li>
+            <li>Nxtwave Course(in progress)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="max-w-7xl mx-auto px-6 py-16">
+      <div class="flex items-end justify-between gap-6 mb-10">
+        <div>
+          <h2 class="text-3xl font-extrabold tracking-tight">Projects</h2>
+          <p class="mt-3 text-slate-300">A selection of academic and personal work.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <article class="rounded-2xl bg-white/5 border border-white/10 p-6 flex flex-col">
+          <div class="flex-1">
+            <h3 class="text-xl font-bold">IOT BASED PET FEEDER AND TRACKER</h3>
+            <p class="mt-2 text-slate-300">Designed and developed an automated pet feeder and tracker with food and water dispensing, water level sensors and real-time GPS tracking, Remote control.</p>
+            <div class="mt-3 flex flex-wrap gap-2 text-sm">
+              <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/10">IoT Hardware</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/10">Sensors</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/10">GPS</span>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm">Role: Project Team Leader--:Oversaw end to end development, integrated hardware and software modules, and ensured user-freiendly functionality.</p>
+          </div>
+          <div class="mt-5 flex items-center gap-3">
+            <a target="_blank" href="https://github.com/valke-archana/IOT-BASED-PET-FEEDER-AND-PET-TRACKER.git" class="inline-flex items-center gap-2 rounded-full bg-white/10 hover:bg-white/15 px-4 py-2 border border-white/10 transition">
+              <!-- GitHub icon -->
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.76.08-.74.08-.74 1.22.09 1.87 1.25 1.87 1.25 1.08 1.86 2.83 1.32 3.52 1 .11-.8.42-1.32.76-1.63-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.24-.12-.31-.54-1.57.12-3.28 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 016 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.71.24 2.97.12 3.28.77.84 1.23 1.92 1.23 3.24 0 4.63-2.8 5.65-5.48 5.95.43.38.81 1.12.81 2.26v3.35c0 .32.21.7.82.58A12 12 0 0012 .5z"/></svg>
+              GitHub
+            </a>
+           <!-- <button data-demo="demo" class="inline-flex items-center gap-2 rounded-full bg-fuchsia-600 hover:bg-fuchsia-500 px-4 py-2 transition">
+              Demo
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>-->
+          </div>
+        </article>
+        <!-- Project 2 -->
+       <!-- Project 2 -->
+        <article class="rounded-2xl bg-white/5 border border-white/10 p-6 flex flex-col">
+          <div class="flex-1">
+            <h3 class="text-xl font-bold">DRUG RECOMMENDATION IN MEDICAL EMERGENICIES</h3>
+            <p class="mt-2 text-slate-300">Developed a machine learning system to recommend suitable drugs during medical emergencies
+                 such as floods, based on patient vital and sysmptoms. Used a Random Forest Classifier with Recursive Feature Elimination to identify top 15 symptoms, boosting accuracy.</p>
+            <div class="mt-3 flex flex-wrap gap-2 text-sm">
+              <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/10">Python</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/10">Machine Learning</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/10">Random Forest Classifier</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/10">RFE</span>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm">Role: Project Team Leader--:Led data preprocessing, model selection, and performance evaluation to deliver accurate
+                 drug suggestions with dosage and side effects.</p>
+          </div>
+          <div class="mt-5 flex items-center gap-3">
+            <a target="_blank" href="https://github.com/valke-archana/DRUG-RECOMMENDATION-IN-MEDICAL-EMERGENCIES-USING-MACHINE-LEARNING.git" class="inline-flex items-center gap-2 rounded-full bg-white/10 hover:bg-white/15 px-4 py-2 border border-white/10 transition">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.76.08-.74.08-.74 1.22.09 1.87 1.25 1.87 1.25 1.08 1.86 2.83 1.32 3.52 1 .11-.8.42-1.32.76-1.63-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.24-.12-.31-.54-1.57.12-3.28 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 016 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.71.24 2.97.12 3.28.77.84 1.23 1.92 1.23 3.24 0 4.63-2.8 5.65-5.48 5.95.43.38.81 1.12.81 2.26v3.35c0 .32.21.7.82.58A12 12 0 0012 .5z"/></svg>
+              GitHub
+            </a>
+            <!--<button data-demo="demo" class="inline-flex items-center gap-2 rounded-full bg-fuchsia-600 hover:bg-fuchsia-500 px-4 py-2 transition">
+              Demo
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>-->
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="rounded-2xl bg-white/5 border border-white/10 p-6 flex flex-col">
+          <div class="flex-1">
+            <h3 class="text-xl font-bold">Calculator web App</h3>
+            <p class="mt-2 text-slate-300">A responsive calculator application built using HTML,CSS and JavaScript, capable of performing baisc arithmetic operations
+              such as addition,subtraction,multiplication,and division.Designed with a clean UI for better usability,
+            </p>
+            <div class="mt-3 flex flex-wrap gap-2 text-sm">
+              <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/10">HTML</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/10">JavaScript</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/10">CSS</span>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm">Role & learnings: Developed the complete Frontend, implemented interactive UI elements.
+            </p>
+          </div>
+          <div class="mt-5 flex items-center gap-3">
+            <a target="_blank" href="https://github.com/valke-archana/CodeAlpha_SimpleCalculator.git" class="inline-flex items-center gap-2 rounded-full bg-white/10 hover:bg-white/15 px-4 py-2 border border-white/10 transition">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.76.08-.74.08-.74 1.22.09 1.87 1.25 1.87 1.25 1.08 1.86 2.83 1.32 3.52 1 .11-.8.42-1.32.76-1.63-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.24-.12-.31-.54-1.57.12-3.28 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 016 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.71.24 2.97.12 3.28.77.84 1.23 1.92 1.23 3.24 0 4.63-2.8 5.65-5.48 5.95.43.38.81 1.12.81 2.26v3.35c0 .32.21.7.82.58A12 12 0 0012 .5z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="rounded-2xl bg-white/5 border border-white/10 p-6 flex flex-col md:col-span-2 xl:col-span-1">
+          <div class="flex-1">
+            <h3 class="text-xl font-bold">TO-Do List Web App</h3>
+            <p class="mt-2 text-slate-300">A task management application built using HTML,CSS and JavaScript, enabling users to add,delete and mark tasks as completed.
+              Designed with a simple,responsive interface to help users stay connected.>
+            <div class="mt-3 flex flex-wrap gap-2 text-sm">
+              <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/10">HTML</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/10">JavaScript</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/10">CSS</span>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm">Role & learnings: Developed the complete Frontend, implemented dynamic task handling using DOM manipulation and improved JavaScript event handling skills.
+            </p>
+          </div>
+          <div class="mt-5 flex items-center gap-3">
+            <a target="_blank" href="https://github.com/valke-archana/To-Do-List.git" class="inline-flex items-center gap-2 rounded-full bg-white/10 hover:bg-white/15 px-4 py-2 border border-white/10 transition">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.76.08-.74.08-.74 1.22.09 1.87 1.25 1.87 1.25 1.08 1.86 2.83 1.32 3.52 1 .11-.8.42-1.32.76-1.63-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.24-.12-.31-.54-1.57.12-3.28 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 016 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.71.24 2.97.12 3.28.77.84 1.23 1.92 1.23 3.24 0 4.63-2.8 5.65-5.48 5.95.43.38.81 1.12.81 2.26v3.35c0 .32.21.7.82.58A12 12 0 0012 .5z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="max-w-7xl mx-auto px-6 py-16">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-extrabold tracking-tight">Education</h2>
+        <p class="mt-3 text-slate-300">Degrees and academic highlights.</p>
+      </div>
+      <div class="relative max-w-3xl mx-auto">
+        <div class="absolute left-4 sm:left-1/2 sm:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-white/10"></div>
+        <div class="relative grid gap-8">
+          <!-- Item 1 -->
+          <div class="relative sm:grid sm:grid-cols-5 sm:gap-6">
+            <div class="flex sm:block items-center sm:col-span-2">
+              <div class="relative z-10 w-8 h-8 rounded-full bg-gradient-to-tr from-fuchsia-500 to-indigo-500 border border-white/20"></div>
+            </div>
+            <div class="sm:col-span-3 rounded-2xl bg-white/5 border border-white/10 p-6">
+              <h3 class="text-xl font-bold">B.Tech in Computer Science</h3>
+              <p class="text-slate-300">JNTUH University — 2021–2025</p>
+              <p class="mt-2 text-slate-400 text-sm">College: Jaya Prakash Narayan College Of Engineering.</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="relative sm:grid sm:grid-cols-5 sm:gap-6">
+            <div class="flex sm:block items-center sm:col-span-2">
+              <div class="relative z-10 w-8 h-8 rounded-full bg-gradient-to-tr from-fuchsia-500 to-indigo-500 border border-white/20"></div>
+            </div>
+            <div class="sm:col-span-3 rounded-2xl bg-white/5 border border-white/10 p-6">
+              <h3 class="text-xl font-bold">Relevant Coursework</h3>
+              <p class="text-slate-300">Cloud Computing, Databases, Web Development, MERN Stack</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact -->
+    <section id="contact" class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-1">
+          <h2 class="text-3xl font-extrabold tracking-tight">Get in Touch</h2>
+          <p class="mt-3 text-slate-300">I’m open to internships, entry-level roles, and collaborations.</p>
+
+          <div class="mt-6 space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-fuchsia-500/20 border border-fuchsia-400/30 grid place-items-center text-fuchsia-300">✉️</div>
+              <div class="flex-1">
+                <a id="emailLink" href="mailto:your.email@example.com" class="font-semibold hover:text-fuchsia-300 transition-colors">valkearchana324@gmail.com</a>
+                <div class="text-slate-400 text-sm">Prefer email? I’ll respond soon.</div>
+              </div>
+              <button id="copyEmail" class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/15 text-sm border border-white/10 transition">Copy</button>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-indigo-500/20 border border-indigo-400/30 grid place-items-center text-indigo-300">💼</div>
+              <a target="_blank" href="www.linkedin.com/in/archana-valke" class="font-semibold hover:text-fuchsia-300 transition-colors">LinkedIn</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-emerald-500/20 border border-emerald-400/30 grid place-items-center text-emerald-300">🐙</div>
+              <a target="_blank" href="https://github.com/valke-archana" class="font-semibold hover:text-fuchsia-300 transition-colors">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2">
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-6 md:p-8">
+            <div class="flex items-center justify-between gap-4">
+              <h3 class="text-xl font-bold">Contact Form</h3>
+              <span class="text-xs px-2 py-1 rounded-full bg-white/10 border border-white/10 text-slate-300">Demo</span>
+            </div>
+            <p class="mt-2 text-slate-400 text-sm">This is a demo form for portfolios. Please email me directly or use LinkedIn for real messages.</p>
+
+            <form id="contactForm" class="mt-6 grid md:grid-cols-2 gap-4">
+              <div class="md:col-span-1">
+                <label class="block text-sm text-slate-300 mb-2">Name</label>
+                <input required type="text" placeholder="Your name" class="w-full rounded-xl bg-white/10 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-fuchsia-400/50" />
+              </div>
+              <div class="md:col-span-1">
+                <label class="block text-sm text-slate-300 mb-2">Email</label>
+                <input required type="email" placeholder="you@example.com" class="w-full rounded-xl bg-white/10 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-fuchsia-400/50" />
+              </div>
+              <div class="md:col-span-2">
+                <label class="block text-sm text-slate-300 mb-2">Message</label>
+                <textarea required rows="4" placeholder="Tell me about your project or opportunity..." class="w-full rounded-xl bg-white/10 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-fuchsia-400/50"></textarea>
+              </div>
+              <div class="md:col-span-2 flex items-center gap-4">
+                <button type="submit" class="inline-flex items-center gap-2 rounded-full bg-fuchsia-600 hover:bg-fuchsia-500 text-white font-semibold px-6 py-3 transition">
+                  Send Message
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><path d="M4 12l16-8-6 16-3-7-7-1z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a href="mailto:your.email@example.com" class="inline-flex items-center gap-2 rounded-full bg-white/10 hover:bg-white/15 text-slate-100 font-semibold px-6 py-3 border border-white/10 transition">Email Instead</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-10 border-t border-white/10 bg-slate-950/40">
+    <div class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-tr from-fuchsia-500 to-indigo-500 text-white font-bold">AV</span>
+          <span class="font-semibold">Archana Valke</span>
+        </div>
+        <p class="mt-3 text-slate-400 text-sm">Aspiring Software Engineer focused on learning, creating, and collaborating.</p>
+      </div>
+      <nav class="grid grid-cols-2 gap-2 text-sm">
+        <a href="#home" class="hover:text-fuchsia-300 transition-colors">Home</a>
+        <a href="#about" class="hover:text-fuchsia-300 transition-colors">About</a>
+        <a href="#skills" class="hover:text-fuchsia-300 transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-fuchsia-300 transition-colors">Projects</a>
+        <a href="#education" class="hover:text-fuchsia-300 transition-colors">Education</a>
+        <a href="#contact" class="hover:text-fuchsia-300 transition-colors">Contact</a>
+      </nav>
+      <div class="flex md:justify-end items-start gap-3">
+        <a target="_blank" href="www.linkedin.com/in/archana-valke" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/15 border border-white/10 grid place-items-center transition" aria-label="LinkedIn">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.05c.53-1 1.84-2.2 3.8-2.2 4.06 0 4.8 2.67 4.8 6.15V24h-4v-7.05c0-1.68-.03-3.85-2.35-3.85-2.35 0-2.71 1.83-2.71 3.73V24h-4V8z"/></svg>
+        </a>
+        <a target="_blank" href="https://github.com/valke-archana" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/15 border border-white/10 grid place-items-center transition" aria-label="GitHub">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.76.08-.74.08-.74 1.22.09 1.87 1.25 1.87 1.25 1.08 1.86 2.83 1.32 3.52 1 .11-.8.42-1.32.76-1.63-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.24-.12-.31-.54-1.57.12-3.28 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 016 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.71.24 2.97.12 3.28.77.84 1.23 1.92 1.23 3.24 0 4.63-2.8 5.65-5.48 5.95.43.38.81 1.12.81 2.26v3.35c0 .32.21.7.82.58A12 12 0 0012 .5z"/></svg>
+        </a>
+        <a href="mailto:valkearchana324@gmail.com" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/15 border border-white/10 grid place-items-center transition" aria-label="Email">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4zM4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm text-slate-400">
+        © <span id="year"></span> Archana Valke. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="fixed left-1/2 -translate-x-1/2 bottom-6 z-[60] hidden">
+    <div class="rounded-full bg-slate-900/90 border border-white/10 text-slate-100 px-4 py-2 shadow-lg">
+      <span id="toastText">Done!</span>
+    </div>
+  </div>
+
+  <!-- Demo modal -->
+  <div id="demoModal" class="fixed inset-0 z-[70] hidden">
+    <div class="absolute inset-0 bg-slate-900/70"></div>
+    <div class="relative max-w-md mx-auto mt-28 rounded-2xl bg-slate-900 border border-white/10 p-6">
+      <h4 class="text-lg font-bold">Demo Preview</h4>
+      <p class="mt-2 text-slate-300">This is a demo button. Replace links with your real project demo or video.</p>
+      <div class="mt-4 flex justify-end">
+        <button id="closeDemo" class="rounded-full bg-fuchsia-600 hover:bg-fuchsia-500 px-5 py-2 font-semibold">Got it</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+    
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96c794bd92ba7f95',t:'MTc1NDc0NTk0My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
